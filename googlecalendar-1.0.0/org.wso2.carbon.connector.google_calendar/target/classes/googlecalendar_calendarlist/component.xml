@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="googlecalendar_calendarlist" type="synapse/template">
+  <subComponents>
+    	<component name="getCalendarList">
+      <file>getCalendarList.xml</file>
+      <description>Get all the calendars of a user</description>
+    </component>
+    </subComponents>
+</component>

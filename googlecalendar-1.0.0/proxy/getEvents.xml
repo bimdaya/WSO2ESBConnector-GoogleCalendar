@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse" name="google_calendar_getEvents" transports="https,http" statistics="disable" trace="disable" startOnLoad="true">
+	<target>
+		<inSequence>
+								<property name="calendarId" expression="json-eval($.calendarId)" />
+								<google_calendar.getEvents>
+							<calendarId>{$ctx:calendarId}</calendarId>
+						</google_calendar.getEvents>
+			<respond />
+		</inSequence>
+		<outSequence>
+			<log />
+			<send />
+		</outSequence>
+	</target>
+	<description />
+</proxy>  

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="googlecalendar_color" type="synapse/template">
+  <subComponents>
+    	<component name="getColors">
+      <file>getColors.xml</file>
+      <description>Get colors used in calendars</description>
+    </component>
+    </subComponents>
+</component>

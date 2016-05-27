@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="googlecalendar_calendar" type="synapse/template">
+  <subComponents>
+    	<component name="getCalendar">
+      <file>getCalendar.xml</file>
+      <description>Get meta data of a calendar</description>
+    </component>
+    </subComponents>
+</component>

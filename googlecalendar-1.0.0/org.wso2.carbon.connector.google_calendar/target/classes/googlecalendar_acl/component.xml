@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="googlecalendar_acl" type="synapse/template">
+  <subComponents>
+    	<component name="getAcl">
+      <file>getAcl.xml</file>
+      <description>Get all the rules of the access control of the calendar</description>
+    </component>
+    </subComponents>
+</component>

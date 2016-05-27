@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template name="getEvents" xmlns="http://ws.apache.org/ns/synapse">
+		<parameter name="calendarId" description="The calendarId" />
+		<sequence>
+				<property expression="$func:calendarId" name="uri.var.calendarId" />
+						<call>
+			<endpoint>
+				<http method="post" uri-template="{uri.var.apiUrl}" />
+			</endpoint>
+		</call>
+	</sequence>
+</template>

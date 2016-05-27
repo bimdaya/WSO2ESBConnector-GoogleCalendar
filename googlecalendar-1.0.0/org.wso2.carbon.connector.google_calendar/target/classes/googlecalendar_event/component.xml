@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="googlecalendar_event" type="synapse/template">
+  <subComponents>
+    	<component name="getEvents">
+      <file>getEvents.xml</file>
+      <description>Get all the events in a calendar</description>
+    </component>
+    	<component name="createEvent">
+      <file>createEvent.xml</file>
+      <description>Create a calendar event</description>
+    </component>
+    </subComponents>
+</component>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<template name="init" xmlns="http://ws.apache.org/ns/synapse">
+	
+	<parameter name="apiUrl" description="The apiUrl" />
+
+	<parameter name="accessToken" description="Access Token if a client account is being used"/>
+		
+	<sequence>
+
+		<property expression="$func:apiUrl" name="uri.var.url" />
+		<property name="uri.var.accessToken" expression="$func:accessToken"/>
+		<header name="Authorization" expression="fn:concat('Bearer ', $ctx:uri.var.accessToken)"
+                scope="transport"/>
+	</sequence>
+
+</template>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<template name="getCalendar" xmlns="http://ws.apache.org/ns/synapse">
+		<parameter name="calendarId" description="The calendarId" />
+		<sequence>
+				<property expression="$func:calendarId" name="uri.var.calendarId" />
+				<property name="Accept-Encoding" action="remove" scope="transport" />
+				<property name="messageType" value="application/json" scope="axis2" />
+        <call>
+            <endpoint>
+                <http method="get"
+                      uri-template="{uri.var.url}/calendar/v3/calendars/{uri.var.calendarId}"/>
+            </endpoint>
+        </call>
+  
+    </sequence>
+</template>

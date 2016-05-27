@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connector>
+    <component name="googlecalendar" package="org.wso2.carbon.connectors" >
+        <dependency component="googlecalendar_acl"/>
+		<dependency component="googlecalendar_calendar"/>
+		<dependency component="googlecalendar_calendarlist"/>
+		<dependency component="googlecalendar_color"/>
+		<dependency component="googlecalendar_config"/>
+		<dependency component="googlecalendar_event"/>
+        <description>Google Calendar Connector 1.0.0</description>
+    </component>
+</connector>
